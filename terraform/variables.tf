@@ -5,7 +5,13 @@ variable "region" {
 
 variable "image_url" {
   description = "Docker image URL to deploy (Docker Hub or ECR)"
-  default     = "vaidikraval5/strapi-app:latest"
+  default     = "vaidikraval5/strapi-app"
+}
+
+variable "key_name" {
+  description = "SSH key name"
+  type        = string
+  default     = "strapinew"
 }
 
 variable "app_port" {
